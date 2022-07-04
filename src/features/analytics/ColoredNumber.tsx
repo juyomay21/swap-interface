@@ -21,9 +21,9 @@ export default function ColoredNumber({
         {(number > 0 ? '+' : number < 0 ? '-' : '') +
           (percent
             ? formatPercent(number).replace('-', '')
-            : scaleNumber
+              : scaleNumber
             ? formatNumberScale(number, true).replace('-', '')
-            : formatNumber(number, true, false).replace('-', ''))}
+              : formatNumber(number, true, false).replace('-', ''))}
       </div>
     </>
   )
